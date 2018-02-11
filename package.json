@@ -1,0 +1,34 @@
+{
+  "name": "falx-redux-devtools",
+  "version": "1.0.0",
+  "description": "redux devtools connector for falx",
+  "main": "dist/main.js",
+  "scripts": {
+    "build": "webpack --mode production --display-modules",
+    "build:publish": "npm run build && npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/one-more/falx-redux-devtools.git"
+  },
+  "keywords": [
+    "falx",
+    "redux-devtools"
+  ],
+  "author": "one-more",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/one-more/falx-redux-devtools/issues"
+  },
+  "homepage": "https://github.com/one-more/falx-redux-devtools#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "webpack": "^4.0.0-beta.1",
+    "webpack-cli": "^2.0.4"
+  },
+  "peerDependencies": {
+    "falx": "^1.1.0"
+  }
+}
