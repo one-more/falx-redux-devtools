@@ -121,7 +121,7 @@ function createStore(reducer, preloadedState, enhancer) {
 export function connectDevtools(devtoolsExtension) {
     const $store = createStore(
         store.getState,
-        devtoolsExtension()
+        devtoolsExtension
     );
 
     use(function(store, promise, action) {
