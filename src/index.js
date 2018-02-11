@@ -1,4 +1,4 @@
-import {store, use} from 'falx'
+import {store} from 'falx'
 
 function createStore(reducer, preloadedState, enhancer) {
     if (typeof preloadedState === 'function' && typeof enhancer === 'undefined') {
@@ -124,10 +124,7 @@ export function connectDevtools(devtoolsExtension) {
         devtoolsExtension
     );
 
-    use(function(store, promise, action) {
-        return promise.then(state => {
-            $store.dispatch(action);
-            return state
-        })
-    });
+    store.subscribe((state, action) => {
+        $store.dispatch(action)
+    })
 }
