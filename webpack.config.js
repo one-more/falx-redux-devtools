@@ -4,7 +4,7 @@ module.exports = {
     output: {
         path: path.join(__dirname, 'dist'),
         filename: 'main.js',
-        library: 'falx',
+        library: 'falx-redux-devtools',
         libraryTarget:'umd'
     },
     module: {
