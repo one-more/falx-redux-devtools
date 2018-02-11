@@ -13,11 +13,6 @@ module.exports = {
         ]
     },
     externals: {
-        falx: {
-            commonjs: 'falx',
-            commonjs2: 'falx',
-            amd: 'falx',
-            root: 'falx'
-        }
+        falx: "falx"
     }
 };
