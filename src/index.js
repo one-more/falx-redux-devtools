@@ -1,4 +1,4 @@
-import {use} from 'falx'
+import {store, use} from 'falx'
 
 function createStore(reducer, preloadedState, enhancer) {
     if (typeof preloadedState === 'function' && typeof enhancer === 'undefined') {
